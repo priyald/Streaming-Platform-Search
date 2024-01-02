@@ -8,3 +8,5 @@ Create a GUI/modular version for users to easily navigate. Should include:</li>
   <li>Being able to search for shows and movies</li>
   <li>Being able to add streaming sites owned and their subscription level to database</li>
 </ul>
+
+Side note: also make csv file personal and accessible to each user
