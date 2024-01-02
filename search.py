@@ -39,7 +39,8 @@ def find(media_name):
     site_info=[]
 
     try:
-        streaming_sites = WebDriverWait(browser, 10).until(EC.presence_of_all_elements_located((By.XPATH, '//*[@id="kp-wp-tab-TvmWatch"]/div[1]/div/div/div[2]/div[1]/div[2]/div/div/div/a/div/div[1]')))
+        print("Waiting time 10 seconds...")
+        streaming_sites = WebDriverWait(browser, 5).until(EC.presence_of_all_elements_located((By.XPATH, '//*[@id="kp-wp-tab-TvmWatch"]/div[1]/div/div/div[2]/div[1]/div[2]/div/div/div/a/div/div[1]')))
         for i in streaming_sites:
             site_info.append(i.text.split("\n"))
     
