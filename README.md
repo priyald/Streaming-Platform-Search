@@ -1,5 +1,5 @@
 # Streaming-Platform-Search
-Check whether your favorite shows are on the streaming platforms you own or not.
+Check whether a movie or show is on the streaming platforms you own or not.
 
 <h2>To-Do</h2>
 <ul>
