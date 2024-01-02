@@ -4,29 +4,32 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from personal_info import *
 
-if browsing_choice==["Chrome"]:
+if browsing_choice==["chrome"]:
     options=wd.ChromeOptions()
     options.add_argument('headless')
     browser=wd.Chrome(options)
-elif browsing_choice==["Edge"]:
+elif browsing_choice==["msedge"]:
     options=wd.EdgeOptions()
     options.add_argument('headless')
     browser=wd.Edge(options)
-elif browsing_choice==["Firefox"]:
+elif browsing_choice==["firefox"]:
     options=wd.FirefoxOptions()
     options.add_argument('headless')
     browsing=wd.Firefox(options)
-elif browsing_choice==["Ie"]:
+elif browsing_choice==["msie"]:
     options=wd.IeOptions()
     options.add_argument('headless')
     browsing=wd.Ie(options)
-elif browsing_choice==["Safari"]:
+elif browsing_choice==["safari"]:
     options=wd.SafariOptions()
     options.add_argument('headless')
     browsing=wd.Safari(options)
 
 
 def find(media_name):
+    if browsing_choice=="":
+        print("Browser not supported")
+        return []
     browser.get("https://www.google.com")
     search_box = browser.find_element(By.ID, "APjFqb")
     search = media_name+" streaming sites"
@@ -41,7 +44,7 @@ def find(media_name):
             site_info.append(i.text.split("\n"))
     
         return site_info
-    except: 
+    except:
         return []
 
 

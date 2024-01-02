@@ -1,7 +1,7 @@
 import csv
+import browser_info
 
-existing_subscriptions=[]
-browsing_choice=["Chrome"] #default value for now
+existing_subscriptions=[] #default value for now
 
 sites =open('s_sites.csv', 'r+')
 
@@ -9,14 +9,13 @@ sites.seek(0)
 reader=csv.reader(sites)
 writer=csv.writer(sites)
 
-browsing_choice=next(reader)
+browsing_choice=browser_info.browser_toggle()
 for i in reader:
     existing_subscriptions.append(i)
 
 def update():
     sites.seek(0)
     sites.truncate()
-    writer.writerow(browsing_choice)
     writer.writerows(existing_subscriptions)
 
 def add_subscription(s_sites, premium_or_no):
