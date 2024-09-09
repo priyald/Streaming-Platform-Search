@@ -1,14 +1,23 @@
-# Streaming-Platform-Search
-Check whether a movie or show is on the streaming platforms you own or not.
+#Streaming Platform Search
 
-<h2>To-Do</h2>
+<h1>Movie & TV Show Streaming Platform Finder</h1>
 
-Create a GUI/modular version for users to easily navigate. Should include:</li>
+<h2>Overview</h2>
+<p>This project is a web scraping application that allows users to search for movies and TV shows, displaying which streaming platforms they are available on. Future versions of the app will allow users to personalize results based on their active streaming subscriptions, providing direct links to the content and handling login errors gracefully.</p>
+
+<h2>Features</h2>
 <ul>
-  <li>Being able to search for shows and movies</li>
-  <li>Being able to add streaming sites owned and their subscription level to database</li>
+    <li><strong>Movie/TV Show Search:</strong> Enter a movie or TV show title and retrieve a list of available streaming platforms.</li>
+    <li><strong>Personalized Streaming Results (Planned):</strong> Filter results to show only platforms you're subscribed to.</li>
+    <li><strong>Direct Streaming Links (Planned):</strong> Click a direct link to the streaming platform for easy access to the content. The app will handle errors if you are not logged in.</li>
 </ul>
 
-Also, implement immediate links to webpages/apps where show is available to watch. Raise error if the webpages/apps are not logged in once personalised. 
+<h2>Current Implementation</h2>
+<p>The current implementation scrapes data from all available streaming platforms to show where movies and TV shows can be found.</p>
 
-Side note: also make csv file personal and accessible to each user
+<h2>Future Development</h2>
+<ul>
+    <li>User Personalization: Add functionality allowing users to input their streaming subscriptions to refine search results.</li>
+    <li>Platform Links: Enable direct links to the streaming platforms for quick access.</li>
+    <li>Error Handling: Implement login error detection to notify users if they are not logged in to the relevant streaming service.</li>
+</ul>
