@@ -9,4 +9,6 @@ Create a GUI/modular version for users to easily navigate. Should include:</li>
   <li>Being able to add streaming sites owned and their subscription level to database</li>
 </ul>
 
+Also, implement immediate links to webpages/apps where show is available to watch. Raise error if the webpages/apps are not logged in once personalised. 
+
 Side note: also make csv file personal and accessible to each user
