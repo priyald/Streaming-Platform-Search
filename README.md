@@ -1,4 +1,4 @@
-#Streaming Platform Search
+# Streaming-Platform-Search
 
 <h1>Movie & TV Show Streaming Platform Finder</h1>
 
